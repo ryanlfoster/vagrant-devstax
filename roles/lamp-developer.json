@@ -1,0 +1,15 @@
+{
+    "name": "lamp-developer",
+    "description": "",
+    "json_class": "Chef::Role",
+    "chef_type": "role",
+    "default_attributes": {},
+    "override_attributes": {},
+    "run_list": [
+        "role[lamp-server]",
+        "recipe[chef-devstax::composer]",
+        "recipe[chef-devstax::eclipse_prereqs]",
+        "recipe[eclipse]"
+    ],
+    "env_run_lists": {}
+}

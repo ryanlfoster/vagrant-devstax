@@ -1,0 +1,38 @@
+{
+    "name": "lamp-local",
+    "description": "",
+    "json_class": "Chef::Environment",
+    "chef_type": "environment",
+    "cookbook_versions": {},
+    "default_attributes": {},
+    "override_attributes": {
+        "java": {
+            "install_flavor": "oracle",
+            "jdk_version": "7",
+            "jdk": {
+                "7": {
+                    "x86_64": {
+                        "url": "file:///software/jdk-7u67-linux-x64.tar.gz",
+                        "checksum": "81e3e2df33e13781e5fac5756ed90e67"
+                    }
+                }
+            },
+            "oracle": {
+                "accept_oracle_download_terms": true
+            }
+        },
+        "git": {
+            "url": "file:///software/git-2.0.4.tar.gz",
+            "checksum": "f072436581ac0c0e9660a0637fd3ae2c"
+        },
+        "eclipse": {
+            "url": "file:///software/eclipse-php-luna-R-linux-gtk-x86_64.tar.gz",
+			"plugins": [{
+				"http://p2-dev.pdt-extensions.org/": "com.dubture.composer.feature.feature.group"
+			}]
+        },
+		"apache": {
+			"listen_ports": [ "8080" ]
+		}
+    }
+}

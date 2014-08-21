@@ -1,0 +1,18 @@
+{
+    "name": "aem-developer",
+    "description": "",
+    "json_class": "Chef::Role",
+    "chef_type": "role",
+    "default_attributes": {},
+    "override_attributes": {},
+    "run_list": [
+        "recipe[apt]",
+        "recipe[git]",
+        "recipe[maven]",
+        "recipe[chef-devstax::filevault]",
+        "recipe[chef-devstax::eclipse_prereqs]",
+        "recipe[eclipse]",
+        "role[aem-author]"
+    ],
+    "env_run_lists": {}
+}
