@@ -28,6 +28,7 @@
         "eclipse": {
             "url": "file:///software/eclipse-php-luna-R-linux-gtk-x86_64.tar.gz",
 			"plugins": [{
+				"http://download.eclipse.org/releases/luna": "org.eclipse.gef",
 				"http://p2-dev.pdt-extensions.org/": "com.dubture.composer.feature.feature.group"
 			}]
         },
