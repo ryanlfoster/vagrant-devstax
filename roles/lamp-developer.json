@@ -8,6 +8,7 @@
     "run_list": [
         "role[lamp-server]",
         "recipe[chef-devstax::composer]",
+        "recipe[chef-devstax::gitflow]",
         "recipe[chef-devstax::eclipse_prereqs]",
         "recipe[eclipse]"
     ],

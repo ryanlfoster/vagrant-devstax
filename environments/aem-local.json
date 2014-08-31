@@ -12,7 +12,7 @@
             "jdk": {
                 "7": {
                     "x86_64": {
-                        "url": "file:///software/jdk-7u67-linux-x64.tar.gz",
+                        "url": "file:///packages/jdk-7u67-linux-x64.tar.gz",
                         "checksum": "81e3e2df33e13781e5fac5756ed90e67"
                     }
                 }
@@ -22,17 +22,17 @@
             }
         },
         "git": {
-            "url": "file:///software/git-2.0.4.tar.gz",
+            "url": "file:///packages/git-2.0.4.tar.gz",
             "checksum": "f072436581ac0c0e9660a0637fd3ae2c"
         },
         "maven": {
             "3": {
-                "url": "file:///software/apache-maven-3.2.2-bin.tar.gz",
+                "url": "file:///packages/apache-maven-3.2.2-bin.tar.gz",
                 "checksum": "cce5914cf8797671fc6e10c4e034b453d854edf711cbc664b478d0f04934cb76"
             }
         },
         "eclipse": {
-            "url": "file:///software/eclipse-java-luna-R-linux-gtk-x86_64.tar.gz",
+            "url": "file:///packages/eclipse-java-luna-R-linux-gtk-x86_64.tar.gz",
 			"plugins": [
 				{
 					"http://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-egit/0.14.0/N/0.14.0.201406241643/": "org.sonatype.m2e.egit.feature.feature.group"
@@ -41,13 +41,13 @@
         },
 		"chef-devstax": {
 			"filevault": {
-				"url": "file:///software/filevault.tgz"
+				"url": "file:///packages/filevault.tgz"
 			}
 		},
 		"aem": {
 			"version": "6.0.0",
-			"download_url": "file:///software/AEM/AEM_6.0_Quickstart.jar",
-			"license_url": "file:///software/AEM/license.properties"
+			"download_url": "file:///packages/AEM/AEM_6.0_Quickstart.jar",
+			"license_url": "file:///packages/AEM/license.properties"
 		}
     }
 }

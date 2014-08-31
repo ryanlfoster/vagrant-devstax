@@ -9,14 +9,21 @@ Vagrant.configure("2") do |config|
 	config.omnibus.chef_version = "latest"
 	# enable berkshelf support
 	config.berkshelf.enabled = true
-	
 	# hostmanager plugin
 	config.hostmanager.enabled = true
 	config.hostmanager.manage_host = true
 	
 	config.vm.box = "chef/ubuntu-14.04"
-	config.vm.synced_folder "C:/AppDevData/Software/packages", "/software", :mount_options => ["ro"] # software package folder
 	
+	# shared folders
+	local_packages = File.directory?("./local-packages")
+	if local_packages
+		config.vm.synced_folder "./local-packages", "/packages", :mount_options => ["ro"] # pre-downloaded software packages
+	end
+	
+	#####################################################
+	# AEM Development Stack
+	#####################################################
 	config.vm.define "aemdev" do |aemdev|
 	
 		aemdev.ssh.forward_x11 = true
@@ -41,7 +48,10 @@ Vagrant.configure("2") do |config|
 		end
 		
 	end
-  
+	
+	#####################################################
+	# Linux/Apache/MySQL/PHP Development Stack
+	#####################################################
 	config.vm.define "lampdev" do |lampdev|
 	
 		lampdev.ssh.forward_x11 = true
