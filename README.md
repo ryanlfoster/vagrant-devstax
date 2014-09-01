@@ -33,9 +33,9 @@ C:\> vagrant plugin install vagrant-vbguest
 ```
 
 ### Starting a VM
-Assuming you checked out this repository to C:\vagrant-chef
+Assuming you checked out this repository to C:\vagrant-devstax
 ```shell
-C:\> cd C:\vagrant-chef
-C:\vagrant-chef> vagrant up <vagrant_name>
+C:\> cd C:\vagrant-devstax
+C:\vagrant-devstax> vagrant up <vagrant_name>
 ```
 You can reference the Vagrantfile for the available vagrants
