@@ -42,6 +42,10 @@
 		"chef-devstax": {
 			"filevault": {
 				"url": "file:///packages/filevault.tgz"
+			},
+			"giteye": {
+				"url": "file:///packages/GitEye-1.8.0-linux.x86_64.zip",
+				"version": "1.8.0"
 			}
 		},
 		"aem": {

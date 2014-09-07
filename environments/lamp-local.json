@@ -34,6 +34,12 @@
         },
 		"apache": {
 			"listen_ports": [ "8080" ]
+		},
+		"chef-devstax": {
+			"giteye": {
+				"url": "file:///packages/GitEye-1.8.0-linux.x86_64.zip",
+				"version": "1.8.0"
+			}
 		}
     }
 }

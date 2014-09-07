@@ -9,7 +9,7 @@
         "role[lamp-server]",
         "recipe[chef-devstax::composer]",
         "recipe[chef-devstax::gitflow]",
-        "recipe[chef-devstax::eclipse_prereqs]",
+		"recipe[chef-devstax::giteye]",
         "recipe[eclipse]"
     ],
     "env_run_lists": {}

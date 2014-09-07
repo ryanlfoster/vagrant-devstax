@@ -7,10 +7,10 @@
     "override_attributes": {},
     "run_list": [
         "recipe[apt]",
-        "recipe[git]",
         "recipe[maven]",
+        "recipe[chef-devstax::gitflow]",
         "recipe[chef-devstax::filevault]",
-        "recipe[chef-devstax::eclipse_prereqs]",
+        "recipe[chef-devstax::giteye]",
         "recipe[eclipse]",
         "role[aem-author]"
     ],
