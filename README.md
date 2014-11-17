@@ -27,7 +27,6 @@ Download and install [Vagrant](https://www.vagrantup.com/downloads.html). You wi
 ```shell
 C:\> vagrant plugin install vagrant-hostmanager
 C:\> vagrant plugin install vagrant-berkshelf
-C:\> vagrant plugin install vagrant-hostmanager
 C:\> vagrant plugin install vagrant-omnibus
 C:\> vagrant plugin install vagrant-vbguest
 ```
